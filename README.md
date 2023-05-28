@@ -71,3 +71,10 @@ function App() {
 
 export default App;
 
+
+# React Interview Questions asked to me with answers.
+
+## Can you provide an overview of your experience with React?
+
+Answer: I have experience building web applications using React, including creating reusable components and managing application state with hooks and the Context API. I have also worked with popular libraries such as Redux and React Router.
+
