@@ -181,3 +181,43 @@ https://medium.com/webdevhero/react-props-cheatsheet-10-patterns-you-should-know
 #### 8. Props can be given a default value if none is provided
 #### 9. Props can be renamed to avoid errors
 #### 10. Don’t attempt to destructure props multiple times
+
+## Understanding Design Patterns in JavaScript
+
+https://blog.bitsrc.io/understanding-design-patterns-in-javascript-13345223f2dd
+
+#### What is a Design Pattern?
+In software engineering, a design pattern is a reusable solution for commonly occurring problems in software design. Design patterns represent the best practices used by the experienced software developers. A design pattern can be thought of as a programming template.
+
+#### Why use Design Patterns?
+Many programmers either think design patterns are a waste of time or they don’t know how to apply them appropriately. But using an appropriate design pattern can help you to write better and more understandable code, and the code can be easily maintained because it’s easier to understand.
+
+Most importantly, the design patterns give software developers a common vocabulary to talk about. They show the intent of your code instantly to someone learning the code.
+
+For example, if you are using decorator pattern in your project, then a new programmer would immediately know what that piece of code is doing, and they can focus more on solving the business problem rather than trying to understand what that code is doing.
+
+Now that we know what design patterns are, and why they are important, let’s dive into various design patterns used in JavaScript.
+
+#### Module Pattern
+A Module is a piece of self-contained code so we can update the Module without affecting the other parts of the code. Modules also allow us to avoid namespace pollution by creating a separate scope for our variables. We can also reuse modules in other projects when they are decoupled from other pieces of code.
+
+Modules are an integral part of any modern JavaScript application and help in keeping our code clean, separated and organized. There are many ways to create modules in JavaScript, one of which is Module pattern.
+
+#### Revealing Module Pattern
+The Revealing Module pattern is a slightly improved version of the module pattern by Christian Heilmann. The problem with the module pattern is that we have to create new public functions just to call the private functions and variables.
+
+#### ES6 Modules
+Before ES6, JavaScript didn’t have built-in modules, so developers had to rely on third-party libraries or the module pattern to implement modules. But with ES6, JavaScript has native modules.
+
+ES6 modules are stored in files. There can only be one module per file. Everything inside a module is private by default. Functions, variables, and classes are exposed using the export keyword. The code inside a module always runs in strict mode.
+
+#### Singleton Pattern
+A Singleton is an object which can only be instantiated only once. A singleton pattern creates a new instance of a class if one doesn’t exist. If an instance exists, it simply returns a reference to that object. Any repeated calls to the constructor would always fetch the same object.
+
+#### Factory Pattern
+Factory Pattern is a pattern that uses factory methods to create objects without specifying the exact class or constructor function from which the object will be created.
+
+The factory pattern is used to create objects without exposing the instantiation logic. This pattern can be used when we need to generate a different object depending upon a specific condition.
+
+#### Decorator Pattern
+A Decorator pattern is used to extend the functionality of an object without modifying the existing class or constructor function. This pattern can be used to add features to an object without modifying the underlying code using them.
