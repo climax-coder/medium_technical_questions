@@ -134,3 +134,7 @@ A chat application shows off my mastery of web sockets and real-time communicati
 
 https://adevnadia.medium.com/react-re-renders-guide-preventing-unnecessary-re-renders-8a3d2acbdba3
 
+## The Complete JavaScript Handbook
+### Promise, Async, Await
+
+https://medium.com/p/f26b2c71719c#cc01
