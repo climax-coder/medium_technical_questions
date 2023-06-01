@@ -125,3 +125,12 @@ The throttling function has 3 parameters, first one is a function to execute. Th
     }
   }, 2000, { trailing: false });
 
+## Chat application using stream-chat-react library
+
+https://github.com/adrianhajdin/project_medical_pager_chat/blob/master/client/src/App.jsx
+A chat application shows off my mastery of web sockets and real-time communication. It is a challenging coding project. Users should be able to send messages and enter various chat groups using the app. You can store the data in a database like MongoDB or Firebase and use a web framework like Socket.io or Pusher to do it.
+
+## How to prevent re-renders in React
+
+https://adevnadia.medium.com/react-re-renders-guide-preventing-unnecessary-re-renders-8a3d2acbdba3
+
