@@ -163,3 +163,7 @@ function App() {
     </>
   );
 }
+
+If we keep changing the input field’s text in a short period (e.g., by typing fast), the deferredQuery state will remain unchanged and the list will not be updated. This is because the query state will keep changing before useDeferredValue can be updated, so useDeferredValue will continue to delay the update until it has time to set deferredQuery to the latest value of query and update the list.
+
+This is quite similar to debouncing, as the list is not updated till a while after input has stopped.
