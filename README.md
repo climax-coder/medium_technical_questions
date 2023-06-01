@@ -138,3 +138,28 @@ https://adevnadia.medium.com/react-re-renders-guide-preventing-unnecessary-re-re
 ### Promise, Async, Await
 
 https://medium.com/p/f26b2c71719c#cc01
+
+## How Does the useDeferredValue Hook Work in React?
+
+useDeferredValue in action
+This is a situation where the useDeferredValue hook is handy. useDeferredValue() accepts a state value as an argument and returns a copy of the value that will be deferred, i.e., when the state value is updated, the copy will not update accordingly until after the DOM has been updated to reflect the state change. This ensures that urgent updates happen and are not delayed by less critical, time-consuming ones.
+
+function App() {
+  const [query, setQuery] = useState('');
+  // 👇 useDefferedValue
+  const deferredQuery = useDefferedValue(query);
+  const list = useMemo(() => {
+    return largeList.filter((item) => item.name.includes(query));
+  }, [deferredQuery]);
+  const handleChange = (event) => {
+    setQuery(event.target.value);
+  };
+  return (
+    <>
+      <input type="text" value={query} onChange={handleChange} placeholder="Search" />
+      {list.map((item) => (
+        <SearchResultItem key={item.id} item={item} />
+      ))}
+    </>
+  );
+}
