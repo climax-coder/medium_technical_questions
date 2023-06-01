@@ -167,3 +167,17 @@ function App() {
 If we keep changing the input field’s text in a short period (e.g., by typing fast), the deferredQuery state will remain unchanged and the list will not be updated. This is because the query state will keep changing before useDeferredValue can be updated, so useDeferredValue will continue to delay the update until it has time to set deferredQuery to the latest value of query and update the list.
 
 This is quite similar to debouncing, as the list is not updated till a while after input has stopped.
+
+## React Props Cheatsheet: 10 Patterns You Should Know
+
+https://medium.com/webdevhero/react-props-cheatsheet-10-patterns-you-should-know-8dde4b9410d8
+#### 1. Props can be passed conditionally
+#### 2. Props passed with just their name have a value of true
+#### 3. Props can be accessed as an object or destructured
+#### 4. Components can be passed as props (including children)
+#### 5. Anything can be passed as a prop (especially functions)
+#### 6. Update a prop’s value with state
+#### 7. Props can be spread in individually
+#### 8. Props can be given a default value if none is provided
+#### 9. Props can be renamed to avoid errors
+#### 10. Don’t attempt to destructure props multiple times
